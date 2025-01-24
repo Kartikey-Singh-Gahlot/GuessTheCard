@@ -60,8 +60,8 @@ if(clicked<3){
     optionstrip.style.bottom= "80px";
     screen.style.backgroundImage= "none";
     heading.textContent="Guess The Card";
-    let rnd = arr[Math.round(Math.floor()*arr.length)];
-    rndrv= reveal[Math.round(Math.floor()*reveal.length)];
+    let rnd = arr[Math.round(Math.floor()*arr.length-1)];
+    rndrv= reveal[Math.round(Math.floor()*reveal.length-1)];
     console.log(rndrv);
     screen.style.animationName="shaking";
 
