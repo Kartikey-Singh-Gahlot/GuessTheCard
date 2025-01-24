@@ -16,15 +16,15 @@ let score= 0;
 const reveal = ['rv01', 'rv02'];
 const arr = [ 'Apple', 'Bell', 'Burger', 'Football', 'Cheese', 'Lantern', 'Rocket','Monkey','Art','Headphones','Telephone'];
 const Obj = {
-    Apple : "url('images/apple.png')",
-    Bell : "url('images/bell.png')",
-    Burger : "url('images/burger.png')",
-    Football : "url('images/football.png')",
-    Cheese : "url('images/cheese.png)",
-    Lantern : 'url(images/lantern.png)',
-    Rocket : 'url(images/rocket.png)',
-    Monkey : 'url(images/monkey_face.png)',
-    Art : 'url(images/art.png)',
+    Apple : "url(images/apple.png)",
+    Bell : "url(images/bell.png)",
+    Burger : "url(images/burger.png)",
+    Football : "url(images/football.png)",
+    Cheese : "url(images/cheese.png)",
+    Lantern : "url(images/lantern.png)",
+    Rocket : "url(images/rocket.png)",
+    Monkey : "url(images/monkey_face.png)",
+    Art : "url(images/art.png)",
     Headphones : 'url(images/headphones.png)',
     Telephone : 'url(images/telephone.png)'
 }
@@ -74,7 +74,7 @@ if(clicked<3){
 
     else{
         setTimeout(()=>{
-        rv02.style.backgroundImage=Obj[rnd];
+        rv02.style.backgroundImage=Obj.rnd;
         rv01.style.backgroundImage="url(images/cross.png)";
         },400);
     }
