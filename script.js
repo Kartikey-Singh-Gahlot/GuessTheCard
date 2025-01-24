@@ -25,8 +25,8 @@ const Obj = {
     Rocket : "url(images/rocket.png)",
     Monkey : "url(images/monkey_face.png)",
     Art : "url(images/art.png)",
-    Headphones : 'url(images/headphones.png)',
-    Telephone : 'url(images/telephone.png)'
+    Headphones : "url(images/headphones.png)",
+    Telephone : "url(images/telephone.png"
 }
 
 
@@ -67,7 +67,8 @@ if(clicked<3){
 
     if (rndrv==="rv01"){
         setTimeout(()=>{
-        rv01.style.backgroundImage=Obj[rnd];
+        rv01.style.backgroundImage=Obj.rnd;
+        console.log(Obj.rnd);
         rv02.style.backgroundImage="url(images/cross.png)";
         },400);
     }
@@ -75,13 +76,15 @@ if(clicked<3){
     else{
         setTimeout(()=>{
         rv02.style.backgroundImage=Obj.rnd;
+        console.log(Obj.rnd);
         rv01.style.backgroundImage="url(images/cross.png)";
         },400);
     }
 
     setTimeout(()=>{
         screen.style.animationName="";
-        screen.style.backgroundImage= Obj[rnd];
+        screen.style.backgroundImage= Obj.rnd;
+        console.log(Obj.rnd);
         heading.textContent=rnd;
      },900);
 }
