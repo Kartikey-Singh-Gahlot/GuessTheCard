@@ -16,17 +16,17 @@ let score= 0;
 const reveal = ['rv01', 'rv02'];
 const arr = [ 'Apple', 'Bell', 'Burger', 'Football', 'Cheese', 'Lantern', 'Rocket','Monkey','Art','Headphones','Telephone'];
 const Obj = {
-    Apple : "url(images/apple.png)",
-    Bell : "url(images/bell.png)",
-    Burger : "url(images/burger.png)",
-    Football : "url(images/football.png)",
-    Cheese : "url(images/cheese.png)",
-    Lantern : "url(images/lantern.png)",
-    Rocket : "url(images/rocket.png)",
-    Monkey : "url(images/monkey_face.png)",
-    Art : "url(images/art.png)",
-    Headphones : "url(images/headphones.png)",
-    Telephone : "url(images/telephone.png"
+    Apple : 'url(images/apple.png)',
+    Bell : 'url(images/bell.png)',
+    Burger : 'url(images/burger.png)',
+    Football : 'url(images/football.png)',
+    Cheese : 'url(images/cheese.png)',
+    Lantern : 'url(images/lantern.png)',
+    Rocket : 'url(images/rocket.png)',
+    Monkey : 'url(images/monkey_face.png)',
+    Art : 'url(images/art.png)',
+    Headphones : 'url(images/headphones.png)',
+    Telephone : 'url(images/telephone.png)'
 }
 
 
@@ -62,28 +62,26 @@ if(clicked<3){
     heading.textContent="Guess The Card";
     let rnd = arr[Math.floor(Math.random()*(arr.length-1))];
     rndrv= reveal[Math.floor(Math.random()*(reveal.length-1))];
+    console.log(rndrv);
     screen.style.animationName="shaking";
 
     if (rndrv==="rv01"){
         setTimeout(()=>{
-        rv01.style.backgroundImage=Obj.rnd;
-        console.log(Obj.rnd);
+        rv01.style.backgroundImage=Obj[rnd];
         rv02.style.backgroundImage="url(images/cross.png)";
         },400);
     }
 
     else{
         setTimeout(()=>{
-        rv02.style.backgroundImage=Obj.rnd;
-        console.log(Obj.rnd);
+        rv02.style.backgroundImage=Obj[rnd];
         rv01.style.backgroundImage="url(images/cross.png)";
         },400);
     }
 
     setTimeout(()=>{
         screen.style.animationName="";
-        screen.style.backgroundImage= Obj.rnd;
-        console.log(Obj.rnd);
+        screen.style.backgroundImage= Obj[rnd];
         heading.textContent=rnd;
      },900);
 }
