@@ -60,7 +60,7 @@ if(clicked<3){
     optionstrip.style.bottom= "80px";
     screen.style.backgroundImage= "none";
     heading.textContent="Guess The Card";
-    let rnd = arr[Math.floor(Math.random()*arr.length];
+    let rnd = arr[Math.floor(Math.random()*arr.length)];
     console.log(rnd) ;
     rndrv= reveal[Math.floor(Math.random()*reveal.length)];
      console.log(rndrv) ;
