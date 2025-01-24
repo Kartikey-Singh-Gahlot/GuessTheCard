@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #000428,#23074d,#000428);
+    padding: 10px ;
+}
+
+#heading{
+   position: absolute;
+   width: 100%;
+   font-size: 50px;
+   text-align: center;
+   color: white;
+   text-shadow: 10px 10px 10px black;
+   font-weight: lighter;
+   top:2%;
+}
+
+#revealstip{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 80px;
+}
+
+.opton02{
+
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 200ms ease-in-out;
+    
+}
+
+
+.contentbox{
+   box-sizing: border-box;
+   border: 1px solid rgba(255, 255, 255, 0.192);
+   height: 96%;
+   width: 98%;
+   position: relative;
+   border-radius: 10px;
+   box-shadow: 10px 10px 20px black inset, -10px -10px 20px black inset;
+
+}
+
+#selectedstrip{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top:15%;
+    display:flex;
+    justify-content: center;
+}
+
+#screen{
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black inset, -10px -10px 10px inset;
+    outline: 1px solid rgba(255, 255, 255, 0.136);
+    transition: 200ms ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(18, 88, 9, 0.899);
+    animation-name: none;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes shaking{
+  from {transform: rotateY(0deg);   background-color: black;}
+  to   {transform: rotateY(720deg); background-color: rgba(18, 88, 9, 0.899);}
+}
+
+#optionstrip{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    bottom: 80px;
+    z-index: 1;
+    display: flex;
+    transition: 300ms ease-in-out;
+    justify-content: space-evenly;
+}
+
+#buttonstrip{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.121);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black, -10px -10px 20px black;
+}
+
+.opton{
+   background: linear-gradient(45deg, #c31432, #240b36);
+   height: 100%;
+   font-size: 80px;
+   color: white;
+   text-shadow: 5px 5px 5px black;
+   text-align: center;
+   width: 300px;
+   border-radius: 20px;
+   transition: 200ms ease-in-out;
+   box-shadow: 10px 10px 20px black, -10px -10px 20px black;
+
+
+}
+
+
+.opton:hover{
+  transform: translateY(-10px);
+  
+}
+
+button:hover{
+  background-color: aqua;
+  color: black;
+}
+
+#scoreboard{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  height: 100%;
+  justify-content: space-evenly;
+  left: 10px;
+}
