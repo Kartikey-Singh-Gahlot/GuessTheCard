@@ -16,11 +16,11 @@ let score= 0;
 const reveal = ['rv01', 'rv02'];
 const arr = [ 'Apple', 'Bell', 'Burger', 'Football', 'Cheese', 'Lantern', 'Rocket','Monkey','Art','Headphones','Telephone'];
 const Obj = {
-    Apple : 'url(images/apple.png)',
-    Bell : 'url(images/bell.png)',
-    Burger : 'url(images/burger.png)',
-    Football : 'url(images/football.png)',
-    Cheese : 'url(images/cheese.png)',
+    Apple : "url('images/apple.png')",
+    Bell : "url('images/bell.png')",
+    Burger : "url('images/burger.png')",
+    Football : "url('images/football.png')",
+    Cheese : "url('images/cheese.png)",
     Lantern : 'url(images/lantern.png)',
     Rocket : 'url(images/rocket.png)',
     Monkey : 'url(images/monkey_face.png)',
